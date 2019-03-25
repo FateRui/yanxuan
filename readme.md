@@ -1,5 +1,6 @@
 这是一个基于uni-app编写的跨ios,安卓，html5,小程序的 hybrid app 详情见展示图
-https://github.com/FateRui/yanxuan/blob/master/demo/1.png
+ ![img](https://github.com/FateRui/yanxuan/blob/master/demo/1.png)
+
 https://github.com/FateRui/yanxuan/blob/master/demo/2.png
 https://github.com/FateRui/yanxuan/blob/master/demo/3.png
 https://github.com/FateRui/yanxuan/blob/master/demo/4.png
