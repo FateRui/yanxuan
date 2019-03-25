@@ -1,0 +1,41 @@
+.contain .brand-item.data-v-0d468aab {
+  position: relative;
+}
+.contain .brand-item .imagePlace.data-v-0d468aab {
+  width: 100%;
+  height: 416rpx;
+  margin-bottom: 4rpx;
+}
+.contain .brand-item .imagePlace image.data-v-0d468aab {
+  width: 100%;
+  height: 100%;
+}
+.contain .brand-item .title-wapper.data-v-0d468aab {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 48rpx;
+}
+.contain .brand-item .title-wapper .split.data-v-0d468aab {
+  height: 56rpx;
+  width: 6rpx;
+  margin: 0 10rpx;
+  background-color: #fff;
+}
+

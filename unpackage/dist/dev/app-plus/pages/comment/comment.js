@@ -1,0 +1,13 @@
+
+      !(function(){
+        var uniAppViewReadyCallback = function(){
+          setCssToHead([".",[1],"content.",[1],"data-v-0a6fb85b { background: #fff; }\n.",[1],"content .",[1],"switch.",[1],"data-v-0a6fb85b { height: ",[0,80],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; border-bottom: 1px solid #ccc; position: fixed; width: 100%; background: #fff; left: 0; top: 0; z-index: 1000; }\n.",[1],"content .",[1],"switch .",[1],"item.",[1],"data-v-0a6fb85b { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }\n.",[1],"content .",[1],"switch .",[1],"item .",[1],"btn.",[1],"data-v-0a6fb85b { color: #333; font-size: ",[0,28],"; position: relative; height: ",[0,80],"; line-height: ",[0,80],"; padding: 0 ",[0,10],"; }\n.",[1],"content .",[1],"switch .",[1],"item .",[1],"selected.",[1],"data-v-0a6fb85b { color: #ab2b2b; }\n.",[1],"content .",[1],"switch .",[1],"item .",[1],"selected.",[1],"data-v-0a6fb85b:after { content: \x22\x22; display: block; height: ",[0,4],"; background: #ab2b2b; position: absolute; bottom: 0; left: 0; width: 100%; }\n.",[1],"content .",[1],"comment-item.",[1],"data-v-0a6fb85b { padding: 0 ",[0,30],"; padding-bottom: ",[0,24],"; border-bottom: 1px solid #f1f1f1; }\n.",[1],"content .",[1],"comment-item .",[1],"time.",[1],"data-v-0a6fb85b { font-size: ",[0,28],"; line-height: ",[0,128],"; height: 128uxp; text-align: right; color: #666; }\n.",[1],"content .",[1],"comment-item .",[1],"desc.",[1],"data-v-0a6fb85b { font-size: ",[0,28],"; line-height: ",[0,46],"; color: #333; }\n.",[1],"content .",[1],"comment-item .",[1],"images.",[1],"data-v-0a6fb85b { margin-top: ",[0,24],"; white-space: nowrap; font-size: 0; }\n.",[1],"content .",[1],"comment-item .",[1],"images .",[1],"imagePlace.",[1],"data-v-0a6fb85b { background: #f1f1f1; display: inline-block; width: ",[0,150],"; height: ",[0,150],"; margin-right: ",[0,28],"; }\n.",[1],"content .",[1],"comment-item .",[1],"images .",[1],"imagePlace wx-image.",[1],"data-v-0a6fb85b { width: 100%; height: 100%; }\n",],undefined,{path:"./pages/comment/comment.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/comment/comment.wxml') } }));
+        }
+        if(window.__uniAppViewReady__){
+          uniAppViewReadyCallback()
+        }else{
+          document.addEventListener('uniAppViewReady',uniAppViewReadyCallback)
+        }
+      })();
+      

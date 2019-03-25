@@ -1,0 +1,35 @@
+.content .comment-item.data-v-7f57b5fb {
+  padding: 0 30rpx;
+  padding-bottom: 24rpx;
+  border-bottom: 1px solid #f1f1f1;
+  background: #fff;
+}
+.content .comment-item .time.data-v-7f57b5fb {
+  font-size: 28rpx;
+  line-height: 128rpx;
+  height: 128uxp;
+  text-align: right;
+  color: #666;
+}
+.content .comment-item .desc.data-v-7f57b5fb {
+  font-size: 28rpx;
+  line-height: 46rpx;
+  color: #333;
+}
+.content .comment-item .images.data-v-7f57b5fb {
+  margin-top: 24rpx;
+  white-space: nowrap;
+  font-size: 0;
+}
+.content .comment-item .images .imagePlace.data-v-7f57b5fb {
+  background: #f1f1f1;
+  display: inline-block;
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 28rpx;
+}
+.content .comment-item .images .imagePlace image.data-v-7f57b5fb {
+  width: 100%;
+  height: 100%;
+}
+
