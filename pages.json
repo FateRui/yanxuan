@@ -23,7 +23,8 @@
         {
             "path" : "pages/cart/cart",
             "style" : {
-                "bounce" : "none"
+                "bounce" : "none",
+				"navigationBarTitleText" : "购物车"
             }
         },
         {

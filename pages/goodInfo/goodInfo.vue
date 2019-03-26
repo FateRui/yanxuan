@@ -48,7 +48,7 @@
 				</view>
 			</view>
 		</view>
-		<wxParse :content="goods_desc" :imageProp ="imageProp" v-if="goods_desc" className="goods_desc"/>
+		<!-- <wxParse :content="goods_desc" :imageProp ="imageProp" v-if="goods_desc" className="goods_desc"/> -->
 		<title-bar title="常见问题" v-if="issue&&issue.length >0"></title-bar>
 		<view class="issue" v-if="issue&&issue.length >0">
 			<view class="issue-item" v-for="(item,index) in issue" :key="index">
@@ -78,11 +78,11 @@
 			<navigator class="cart" url="/pages/cart/cart" open-type="switchTab">
 				<view class="imagePlace">
 					<image class="icon" src="../../static/images/ic_menu_shoping_nor.png"></image>
-					<text class="count">20</text>
+					<text class="count">{{goodsCount}}</text>
 				</view>
 			</navigator>
 			<view class="buy">立即购买</view>
-			<view class="addCart">加入购物车</view>
+			<view class="addCart" @tap.stop="addCart">加入购物车</view>
 		</view>
 		<view class="mask" v-show="showMask" v-if="info" @touchstart="cancel($event)">
 			<view class="salePane">
@@ -111,8 +111,9 @@ import split from '../../components/split.vue'
 import titleBar from '../../components/titleBar.vue'
 import wxParse from '../../components/uParse/src/wxParse.vue'
 import Stepper from '../../components/Stepper.vue'
+import Vue from 'vue'
 let graceLazyload = require('../../util/graceLazyload.js')
-
+import {mapGetters} from 'vuex'
 export default {
 	components:{
 		policy,split,titleBar,wxParse,Stepper
@@ -142,6 +143,9 @@ export default {
 		this.good_id = options['id'];
 		if(!this.good_id) uni.navigateBack();
 	},
+	computed:{
+		...mapGetters(['goodsCount'])
+	},
 	onPageScroll:function(e){
 		graceLazyload.load(e.scrollTop, this);
 	},
@@ -167,6 +171,26 @@ export default {
 				that.goods = data.goodsList;
 				graceLazyload.load(0, that);
 			},false);
+		},
+		addCart(){
+			if(!this.showMask){
+				this.showMask = true;
+			} else {
+				this.info.buyCount = this.count;
+				this.$store.commit('addGood',{
+					id: this.info.id,
+					buyCount: this.count,
+					name: this.info.name,
+					list_pic_url: this.info.list_pic_url,
+					retail_price: this.info.retail_price
+				});
+				this.showMask = false;
+				uni.showToast({
+					icon: 'success',
+					title: '添加成功',
+					duration: 500
+				});
+			}
 		},
 		cancel(e){
 			e.stopPropagation();

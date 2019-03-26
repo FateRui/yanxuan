@@ -1,2 +1,0 @@
-<import src="./goodInfo.vue.wxml" />
-    <template is="fe18aacc" data="{{ ...$root['0'], $root }}"/>

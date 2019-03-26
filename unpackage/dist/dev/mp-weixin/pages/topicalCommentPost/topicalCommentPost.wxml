@@ -1,2 +1,0 @@
-<import src="./topicalCommentPost.vue.wxml" />
-    <template is="4d8bd04c" data="{{ ...$root['0'], $root }}"/>

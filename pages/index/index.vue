@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view class="searchBar">
-			<navigator class="place" url="/pages/search/search">
+			<navigator class="place" url="/pages/search/search" hover-class="none">
 				<view class="icon"></view>
 				<view>商品搜索，共239款好物</view>
 			</navigator>
@@ -12,7 +12,7 @@
 			</swiper-item>
 		</swiper>
 		<view class="channel">
-			<navigator :url="item.url" class="channel-item" v-for="(item,index) in exec_chanel" :key="item.id">
+			<navigator :url="item.url" class="channel-item" v-for="(item,index) in exec_chanel" :key="item.id" hover-class="none">
 				<view class="imagePlace">
 					<image :src="chanelImages[index]"></image>
 				</view>
@@ -22,14 +22,14 @@
 		<split v-if="brandList.length > 0"></split>
 		
 		<view class="title" v-if="brandList.length > 0">
-			<navigator url="/pages/brand/brand" class="link">
+			<navigator url="/pages/brand/brand" class="link" hover-class="none">
 				<view>品牌制造商特供</view>
 				<image src="../../static/images/address_right.png" class="go"></image>
 			</navigator>
 		</view>
 		
 		<view class="brand-container">
-			<navigator class="brand-item" v-for="(item,index) in brandList" :key="index" :url="'/pages/brandDetail/brandDetail?brand_id='+item.id">
+			<navigator class="brand-item" v-for="(item,index) in brandList" :key="index" :url="'/pages/brandDetail/brandDetail?brand_id='+item.id" hover-class="none">
 				<image class="brand-img grace-img-lazy" :src="isShow[index]? item.new_pic_url: '' "></image>
 				<view class="detail-warpper">
 					<view class="title">{{item.name}}</view>
@@ -38,7 +38,7 @@
 			</navigator>
 		</view>
 		
-		<navigator class="title" v-if="newGoodsList.length > 0" url="/pages/order/order?type=new">
+		<navigator class="title" v-if="newGoodsList.length > 0" url="/pages/order/order?type=new" hover-class="none">
 			<view>周一到周四 新品首发</view>
 			<image src="../../static/images/address_right.png" class="go"></image>
 		</navigator>
@@ -53,13 +53,13 @@
 		</view>
 		
 		<split v-if="hotGoodsList.length > 0"></split>
-		<navigator class="title" v-if="hotGoodsList.length > 0" url="/pages/order/order?type=hot">
+		<navigator class="title" v-if="hotGoodsList.length > 0" url="/pages/order/order?type=hot" hover-class="none">
 			<view>人气推荐</view>
 			<image src="../../static/images/address_right.png" class="go"></image>
 		</navigator>
 		
 		<view class="verticle-list">
-			<navigator class="verticle-list-item" v-for="(item,index4) in hotGoodsList" :key="item.id" :url="'/pages/goodInfo/goodInfo?id='+item.id">
+			<navigator class="verticle-list-item" v-for="(item,index4) in hotGoodsList" :key="item.id" :url="'/pages/goodInfo/goodInfo?id='+item.id" hover-class="none">
 				<view class="image-place">
 					<image :src="isShow[index4]? item.list_pic_url: '' " class="grace-img-lazy"></image>
 				</view>
@@ -71,12 +71,12 @@
 			</navigator>
 		</view>
 	
-		<navigator class="title" v-if="topicList.length > 0" url="/pages/topical/topical" open-type="switchTab">
+		<navigator class="title" v-if="topicList.length > 0" url="/pages/topical/topical" open-type="switchTab" hover-class="none">
 			<view>专题精选</view>
 			<image src="../../static/images/address_right.png" class="go"></image>
 		</navigator>
 		<scroll-view class="horizon-list" :scroll-x="true">
-			<navigator class="horizon-list-item" v-for="(item,index3) in topicList" :key="item.id" :url="'/pages/topicalDetail/topicalDetail?id='+item.id">
+			<navigator class="horizon-list-item" v-for="(item,index3) in topicList" :key="item.id" :url="'/pages/topicalDetail/topicalDetail?id='+item.id" hover-class="none">
 				<view class="imagePlace">
 					<image :src="isShow[index3]? item.item_pic_url: '' " class="grace-img-lazy"></image>
 				</view>
@@ -94,7 +94,7 @@
 				<view>{{item.name}}</view>
 			</view>
 			<view class="simple-list">
-				<navigator class="simple-list-item" v-for="good in item.goodsList" :key="good.id" :url="'/pages/goodInfo/goodInfo?id='+good.id">
+				<navigator class="simple-list-item" v-for="good in item.goodsList" :key="good.id" :url="'/pages/goodInfo/goodInfo?id='+good.id" hover-class="none">
 					<view class="imagePlace bgColor">
 						<image :src="isShow[index4]? good.list_pic_url: ''" class="grace-img-lazy"></image>
 					</view>

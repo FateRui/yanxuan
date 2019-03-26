@@ -1,1 +1,23 @@
+<import src="/components/split.vue.wxml" />
+<import src="/components/policy.vue.wxml" />
+<import src="/components/check.vue.wxml" />
+<import src="/components/sift/sift.vue.wxml" />
+<import src="/components/titleBar.vue.wxml" />
+<import src="/components/Stepper.vue.wxml" />
+<import src="/components/uParse/src/wxParse.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate0.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate1.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseVideo.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseAudio.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseImg.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate2.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate3.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate4.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate5.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate6.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate7.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate8.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate9.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate10.vue.wxml" />
+<import src="/components/uParse/src/components/wxParseTemplate11.vue.wxml" />
 

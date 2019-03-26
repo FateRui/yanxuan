@@ -1,0 +1,1 @@
+<template name="23eac20e"><view class="_view data-v-13692f28 check {{[value ? 'selected' : '']}}" catchtap="handleProxy" data-eventid="{{'23eac20e-0'}}" data-comkey="{{$k}}"></view></template>
